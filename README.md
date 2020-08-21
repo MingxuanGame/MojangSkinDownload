@@ -1,6 +1,12 @@
 MojangSkinDownload
 ================
 
+更新报告
+------
+```diff
++ 资源包制作（下载cabarc.exe，和脚本放到同一个目录下）
+```
+
 `注意:由于Python 3重写了代码导致与Python 2不兼容，请务必使用Python 3运行此程序`
 
 为了方便以下说明，MojangSkinDownload会简称为MSD(除特殊情况)

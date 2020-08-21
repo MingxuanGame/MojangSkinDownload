@@ -8,8 +8,10 @@ MojangSkinDownload
 更新报告
 ------
 ```diff
-#**MSD1.1**
+#MSD1.1版
 + 资源包制作（下载cabarc.exe，和脚本放到同一个目录下）
+#MSD1.0版
++ 皮肤下载
 ```
 
 

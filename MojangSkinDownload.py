@@ -58,5 +58,5 @@ else:
     os.system('copy a.cab Skin.zip /Y')
     os.system('rd /s /q C:\\msdres')
     os.system('del /F /S /Q a.cab')
-    os.system('del /F /S /Q cabarc.exe')
     print('生成资源包完成,文件名：Skin.zip')
+    os.system('pause')

@@ -1,4 +1,4 @@
-#encoding:utf-8
+#coding:utf-8
 
 #获取玩家UUID
 name = input('输入Minecraft用户名:')
@@ -31,8 +31,32 @@ else:
 print("已经获取玩家皮肤下载地址")
 import requests
 filename = input('输入皮肤文件保存名称，支持中文:')
-r = requests.get(skin)
+r = requests.get(skin) 
 print('正在下载')
 with open(filename + ".png",'wb') as f:
     f.write(r.content)
-sjdhshdh = input("下载成功，按回车键关闭")
+resacce = input("下载成功，按任意键＋回车键关闭,输入res＋回车生成资源包")
+
+#资源包生成
+if resacce != 'res':
+    exit()
+else:
+    import os
+    print('正在生成资源包中')
+    os.makedirs('C:\\msdres\\assets\\minecraft\\textures\\entity')
+    if skintf != 'slim"':           #判断纤细皮肤
+        resmd2 = 'C:\\msdres\\assets\\minecr~1\\textures\\entity\\steve.png'
+    else:
+        resmd2 = 'C:\\msdres\\assets\\minecr~1\\textures\\entity\\alex.png'
+    os.system('copy %s %s /Y' % (filename + '.png',resmd2))
+    with open("pack.mcmeta","w") as f:
+        f.write("{\n")
+    with open("pack.mcmeta","a") as f:
+        f.write('  "pack": {\n    "pack_format": 5,\n    "description": "\\u00A7r\\u76ae\\u80a4\\u8d44\\u6e90\\u5305\\u00A7r,§eBy MojangSkinDownload"\n  }\n}')
+    os.system('copy %s %s /Y' % ('pack.mcmeta','C:\\msdres\\'))
+    os.system('cabarc -p -r N a.cab C:\\msdres\\*.*')
+    os.system('copy a.cab Skin.zip /Y')
+    os.system('rd /s /q C:\\msdres')
+    os.system('del /F /S /Q a.cab')
+    os.system('del /F /S /Q cabarc.exe')
+    print('生成资源包完成,文件名：Skin.zip')

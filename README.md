@@ -8,6 +8,12 @@ MojangSkinDownload
 更新报告
 ------
 ```diff
+#MSD1.2版
++ 优化资源包制作（无需下载cabarc.exe）
++ 优化下载（无需pip install requests）
++ 增加字符文字
++ 优化加载文字
++ 英文支持
 #MSD1.1版
 + 资源包制作（下载cabarc.exe，和脚本放到同一个目录下）
 #MSD1.0版
@@ -19,12 +25,8 @@ MojangSkinDownload
 部署运行环境
 -------------
 
-1.前往[Python官方网站](https://www.python.org)下载最新的Python并安装(请勾选Add Python 3.x to PATH)
+前往[Python官方网站](https://www.python.org)下载最新的Python并安装(请勾选Add Python 3.x to PATH)
 
-2.打开命令行窗口，输入
-```
-pip install requests
-```
 
 MSD运行
 ---------
@@ -41,6 +43,8 @@ bug反馈&改进建议
 --------------
 
 bug反馈以及改进建议请在GitHub进行反馈或者发送电子邮件至```MingxuanGame@outlook.com```
+
+鉴于作者水平，如有不足，欢迎反馈，也欢迎使用者完善MSD
 
 未来将要加入的功能(咕咕咕)
 ---------------------

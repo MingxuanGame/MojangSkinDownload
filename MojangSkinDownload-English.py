@@ -79,9 +79,9 @@ resacce = input("If the download is successful, press any key + Enter key to clo
 
 
 import zipfile
-zipname = input('Enter resource package save Name:')
 copyzip = os.getcwd()
 if resacce == 'res':
+    zipname = input('Enter resource package save Name:')
     def zip():
         startdir = "C:\\msdres"
         file_news = zipname + '.zip' 
@@ -91,10 +91,10 @@ if resacce == 'res':
             fpath = fpath and fpath + os.sep or ''
         for filename in filenames:
             z.write(os.path.join(dirpath, filename),fpath+filename)
-        print ('压缩成功')
+        print ('Compression successful')
         z.write('pack.mcmeta','pack.mcmeta', zipfile.ZIP_DEFLATED)
         z.close()
-    print('正在生成资源包中')
+    print('Building resource bundle')
     os.makedirs('C:\\msdres\\assets\\minecraft\\textures\\entity')
     if skintf != 'slim"':           
         resmd2 = 'C:\\msdres\\assets\\minecr~1\\textures\\entity\\steve.png'

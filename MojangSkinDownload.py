@@ -33,8 +33,9 @@ elif ran == 4:
     print('                  \|_________|         ')
 print('==========================================')
 print('          MojangSkinDownload')
-print('            当前版本：MSD1.3')
-print('你可以在Github下载最新版本以及查看最新动态')
+print('            当前版本：MSD1.2')
+print('你可以在Github和码云下载最新版本以及查看')
+print('                最新动态')
 print('==========================================')
 #获取玩家UUID
 name = input('输入Minecraft用户名:')

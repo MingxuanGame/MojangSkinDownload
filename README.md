@@ -28,13 +28,13 @@ MojangSkinDownload
 部署运行环境
 -------------
 
-前往[Python官方网站](https://www.python.org)下载最新的Python并安装(请勾选Add Python 3.x to PATH)
+(py文件)前往[Python官方网站](https://www.python.org)下载最新的Python并安装(请勾选Add Python 3.x to PATH)
 
 
 MSD运行
 ---------
 
-打开MojangSkinDownload.py
+打开MojangSkinDownload.py（应用程序打开MojangSkinDownload.exe）
 
 输入玩家名称，必须是一个有效正版玩家，否则会返回404错误
 
